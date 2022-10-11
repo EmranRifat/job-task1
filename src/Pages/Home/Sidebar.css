@@ -1,0 +1,33 @@
+
+.Show-more{
+    color:rgba(137, 43, 226, 0.486);
+
+}
+.Show-more:hover{
+    color:rgba(137, 43, 226, 0.836);
+    text-decoration: underline;
+}
+.card-img{
+width: 60px;
+height: auto;
+
+}
+.both:hover{
+    background-color:rgba(126, 180, 182, 0.24);
+}
+.both{
+    background-color: rgba(173, 216, 230, 0.137);
+}
+.x:hover{
+    color: rgba(0, 0, 255, 0.541);
+    text-decoration: underline;
+}
+.btn1{
+    color: rgba(0, 0, 255, 0.562);
+    font-weight: bold;
+    margin-bottom: -28px;
+    margin-top: -23px;
+}
+.btn1:hover{
+    background-color: grey;
+}

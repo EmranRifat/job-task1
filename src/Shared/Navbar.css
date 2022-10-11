@@ -1,0 +1,66 @@
+.nav-set{
+    margin-right: -10px; 
+}
+.nav-icon{
+    font-size: 18px;
+    /* margin-left: 50px; */
+    padding-left: 0px;
+}
+.home-icon{
+    margin-left: 148px;
+}
+.nav-font{
+    font-size: 12px;
+    margin-right: 50px;
+    margin-left: -3px;
+}
+.fa-house{
+    padding-left: 1px; 
+}
+.people{
+    width: 20px;
+    /* margin-left: 13px; */
+    padding-bottom: 5px; 
+    margin-left:14px;
+}
+.me-img{
+    width: 30px;
+    border-radius:20%;
+    height: auto;
+    margin-top: 6px;
+}
+.grid-img{
+    width: 20px;
+    /* border-radius:50%; */
+    height: auto;
+}
+/* .navbar-center {
+    flex-shrink: 0;
+    margin-right: 120px;
+} */
+/* .profile{
+    margin-right: 162px;
+} */
+.border-line{
+    border-right: 3px solid rgba(29, 28, 27, 0.788);
+    /* padding-right: 10px; */
+    margin-left: 20px;
+}
+
+.linkedin{
+    margin-left: 45px;
+    width: 40px;
+    /* border-radius:50%; */
+    height: auto;
+    
+}
+.search-area{
+    background-color: rgba(165, 174, 182, 0.178);
+}
+.navbar-end{
+    /* margin-left: -80px; */
+}
+.nav-icons:hover{
+font-weight:500 ;
+text-decoration: underline;
+}
