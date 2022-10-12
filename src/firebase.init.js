@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAr8Mvb6jXgrLlvFI7V_H_cWtyaP-koRFs",
-  authDomain: "linkedin-job.firebaseapp.com",
-  projectId: "linkedin-job",
-  storageBucket: "linkedin-job.appspot.com",
-  messagingSenderId: "373335129405",
-  appId: "1:373335129405:web:0f8b6b78b624a106f7d954"
+  apiKey: "AIzaSyAwBAk4Ka9HVtbJtmUyKPRMgkPLX9TWnfw",
+  authDomain: "task-3986f.firebaseapp.com",
+  projectId: "task-3986f",
+  storageBucket: "task-3986f.appspot.com",
+  messagingSenderId: "485699890748",
+  appId: "1:485699890748:web:1312518d9f9707b3095d39"
 };
 
 // Initialize Firebase

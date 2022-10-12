@@ -31,3 +31,25 @@ height: auto;
 .btn1:hover{
     background-color: grey;
 }
+.icon1{
+    margin-top: 11px;
+    margin-left: 26px;
+}
+.icon2{
+
+}
+.table-card{
+    margin-left: -32px;
+    width: 440px;
+}
+.second-card{
+    margin-top: -836px;
+}
+/* .nav-img{
+    height: 48px;
+} */
+@media only screen and (max-width: 600px) {
+    .body {
+      background-color: lightblue;
+    }
+  }

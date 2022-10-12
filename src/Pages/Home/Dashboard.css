@@ -65,7 +65,7 @@
 
 }
 .upper{
-    margin-top: -275px;
+    margin-top: -305px;
 }
 .card-two{
     margin-right: 102px; 
@@ -80,11 +80,18 @@
     line-height: 3.1;
 }
 .admission{
-    margin-left: -86px;
+    margin-left: -90px;
+}
+.admission1{
+    margin-left: -80px;
+    height: 346px;
 }
 .pie{
-    margin-top: -53px;
+    margin-top: -672px;
 }
 .contact{
-    margin-top: -55px;
+    margin-top: -672px;
+}
+.income1{
+    line-height: 3.1;
 }

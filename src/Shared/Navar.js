@@ -5,27 +5,39 @@ const Navar = () => {
     <div>
       <div class="navbar bg-base-100">
   <div class="navbar-start">
-  <div class="dropdown  text-primary ">
-      <label tabindex="0" class="btn btn-ghost btn-circle">
+  
+
+<div className='flex'>
+<div class="dropdown  ">
+      <label tabindex="0" class="btn btn-ghost btn-circle text-primary">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
 
       </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Homepage</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>About</a></li>
+      <ul tabindex="0" class="menu menu-compact text-[black] dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Dashboard</a></li>
+        <li><a>My Wallet</a></li>
+        <li><a>Transsations</a></li>
+        <li><a>Invoice</a></li>
+        <li><a>Card Center</a></li>
+        <li><a>Contact</a></li>
+        <li><a>Message</a></li>
+        <li><a>Setting</a></li>
       </ul>
 
     </div>
-    <h1 className='font-bold text-lg'>doit</h1>
+<h1 className='font-bold text-4xl'>doit</h1>
+
+</div>
 
    
   </div>
-  <div class="dropdown">
+  <div class="dropdown  ">
       <label tabindex="0" class="btn btn-ghost btn-circle">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+
       </label>
-    
+   
+
     </div>
   <div class="navbar-center">
     
@@ -59,14 +71,19 @@ const Navar = () => {
         </div>
       </label>
   </div>
-      <label tabindex="0" class="avatar flex mr-6">
-      
-          <div class="w-10 rounded">
+      <div tabindex="1" class="avatar flex mr-6">
+     
+  
+     <p className='mr-4  font-bold text-gray-700'><small>Adam Jackson</small></p>
+        {/* <p className='mr-4   text-gray-500'><small>@adamJackson</small></p> */}
+  
+        
+          <div class="w-10 rounded nav-img">
           <img src="https://placeimg.com/80/80/people" />
         </div>
   
         
-      </label>
+      </div>
    
     
   </div>

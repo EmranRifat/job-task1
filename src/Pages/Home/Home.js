@@ -31,7 +31,7 @@ const Home = () => {
    
    <div>
    <p className='font-bold mt-8'><small>Dolt personal banking admin</small></p>
-   <p><small className='text-gray-500  '>@all rught reserved</small></p>
+   <p><small className='text-gray-500  '>@ 2022 all right reserved</small></p>
 
    </div>
 
