@@ -45,11 +45,70 @@ height: auto;
 .second-card{
     margin-top: -836px;
 }
-/* .nav-img{
-    height: 48px;
-} */
-@media only screen and (max-width: 600px) {
-    .body {
-      background-color: lightblue;
+
+@media (max-width: 700px) {
+    .drawer-content{
+        flex-direction: column;
+        /* background-color: aqua; */
     }
+    .contact{
+        margin-top: 0;
+        margin-left:15% ;
+        width:70%;
+
+    }
+    .pie{
+        margin-top:40%;
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    .second-card{
+        margin-top: 10%;
+        width: 90%;
+        margin-left: 20px;
+    }
+    .transsation{
+        margin-left: 100px;
+    }
+    .income{
+        margin-left: 100px;   
+    }
+    .box1{
+        margin-left: 100px;   
+    }
+    .table-card{
+        margin-left: 12px;   
+    }
+    .lineChart{
+        width:50%;
+        height: auto;
+        margin-left:-40px ;
+    }
+    .second-card{
+        width:100%;
+        margin-left:60px;
+        margin-top: 12px;
+    }
+    .colum-card{
+        margin-top:-30%;
+        width:80%;
+        margin-left: 10%;   
+    }
+    .dashboard{
+        visibility: hidden;
+    }
+    .search{
+        margin-left:-190px;
+     
+    }
+    .input-field{
+
+    }
+    .navbar-end{
+        visibility: hidden;
+    }
+
+    
+   
   }

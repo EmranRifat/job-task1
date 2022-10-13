@@ -126,6 +126,8 @@ const Sidebar = () => {
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
   const value = 0.66;
+  const value2 = 0.36;
+
 
   return (
     <div className="body">
@@ -139,13 +141,13 @@ const Sidebar = () => {
                 <div class="card-center mt-24  lg:card-left">
                   {/* mini card...... */}
 
-                  <div className="flex ml-16  space-x-4 ">
+                  <div className="flex  income	 ml-16  space-x-4 ">
                     <div class="card w-52 groups h-32 bg-primary text-primary-content">
                       <div class="card-body ">
                         <div className="flex">
                           <div>
                             <h2 class="card-title dolar-card">$45,234</h2>
-                            <p className="income">
+                            <p className="income2">
                               <small>Income</small>
                             </p>
                             <p className="month-card">
@@ -158,7 +160,7 @@ const Sidebar = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="card card-two w-52 groups ml-4 h-32  bg-orange-600 text-primary-content">
+                    <div class="card card-two w-52 groups ml-4 h-32  bg-red-600 text-primary-content">
                       <div class="card-body ">
                        <div className="flex">
                        <div>
@@ -178,23 +180,38 @@ const Sidebar = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex ml-16   space-x-4  mt-24">
+                  <div className="flex ml-16 transsation  space-x-4  mt-24">
                     <div class="card w-52 groups h-32 bg-white text-primary-content">
                       <div class="card-body">
                         <h2 class="card-title text-black">998</h2>
                         <p><small class="text-gray-600 text-black">Transsation</small></p>
+                    
                       </div>
                     </div>
                     <div class="card card-two w-52 groups ml-4 h-32  bg-white text-primary-content">
-                      <div class="card-body">
-                      <h2 class="card-title text-black">1.498</h2>
+                      <div class="card-body ">
+                    <div className="flex">
+                    <div>
+                     <h2 class="card-title text-black">1.498</h2>
                         <p><small class="text-gray-600 text-black">Contacts</small></p>
+                     </div>
+                     <div className="card-progress" style={{ width: 46, height: 100}} >
+                     <CircularProgressbar
+                     
+                      
+                     
+                        value={value2}
+                        maxValue={1}
+                        text={`${value * 75}%`}
+                      />
+                     </div>
+                    </div>
                       </div>
                     </div>
                   </div>
 
                   {/* bar chart start  */}
-                  <div className="flex space-x-24 ml-16">
+                  <div className="flex box1 flex-wrap space-x-24 ml-16">
                     <div>
                       <div class="card w-52 mt-4 admission  ml-10  bg-base-100 ">
                         <div class="card-body">
@@ -237,7 +254,7 @@ const Sidebar = () => {
                       <div>
                         <div class="card w-52 mt-4 admission1  bg-base-100 ">
                           <div class="card-body">
-                            <div className="flex">
+                            <div className="flex flex-wrap	">
                               <div>
                                 <p class=" font-semibold text-gray-600">
                                   <small>Your balance</small>
@@ -316,7 +333,7 @@ const Sidebar = () => {
 
                                 </th>
                                 <td>
-                                  <div class="flex items-center space-x-3">
+                                  <div class="flex flex-wrap	 items-center space-x-3">
                                     <div class="">
 
                                     </div>
@@ -342,7 +359,7 @@ const Sidebar = () => {
 
                                 </th>
                                 <td>
-                                  <div class="flex items-center space-x-3">
+                                  <div class="flex  flex-wrap	 items-center space-x-3">
                                     <div class="">
 
                                     </div>
@@ -368,7 +385,7 @@ const Sidebar = () => {
 
                                 </th>
                                 <td>
-                                  <div class="flex items-center space-x-3">
+                                  <div class="flex flex-wrap	 items-center space-x-3">
                                     <div class="avatar">
                                       
                                     </div>
@@ -394,7 +411,7 @@ const Sidebar = () => {
 
                                 </th>
                                 <td>
-                                  <div class="flex items-center space-x-3">
+                                  <div class="flex flex-wrap	 items-center space-x-3">
                                     <div class="avatar">
                                       
                                     </div>
@@ -420,7 +437,7 @@ const Sidebar = () => {
 
                                 </th>
                                 <td>
-                                  <div class="flex items-center space-x-3">
+                                  <div class="flex flex-wrap	 items-center space-x-3">
                                     <div class="avatar">
                                      
                                     </div>
@@ -458,7 +475,7 @@ const Sidebar = () => {
                     <div>
                       <h2 className="font-bold mb-4">Your balence summery</h2>
 
-                      <div className="flex">
+                      <div className="flex flex-wrap	">
                         <div>
                           <h3 className="icon1 text-3xl text-primary">
                             <BsFillArrowUpRightCircleFill/>
@@ -484,8 +501,9 @@ const Sidebar = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="">
+                    <div  className="lineChart">
                       <LineChart
+                     
                         width={500}
                         height={250}
                         data={data}
@@ -516,7 +534,7 @@ const Sidebar = () => {
 
             {/* Line chart end */}
 
-            <div className="flex">
+            <div className="flex flex-wrap	">
               <div class="card fit-content w-72 ml-4 pie  mb-10 bg-base-100 ">
                 <div class="card-body">
                   <h2 className="font-bold mb-4">Pie Chart</h2>
@@ -556,7 +574,7 @@ const Sidebar = () => {
                     ></Pie>
                   </PieChart>
 
-                  <div className="flex space-x-12 ">
+                  <div className="flex flex-wrap	 space-x-12 ">
                     <div>
                       <p>💚Green</p>
                       <p>🔴red</p>
@@ -571,7 +589,7 @@ const Sidebar = () => {
               {/* contact start */}
               <div class="card  w-72 ml-6 contact  mb-40 bg-base-100 ">
                 <div class="card-body">
-                  <div className="flex">
+                  <div className="flex flex-wrap	">
                     <div>
                       <h2 className="font-bold mb-4">Contacts</h2>
                       <p className="text-gray-600 mb-4">
@@ -580,7 +598,7 @@ const Sidebar = () => {
                     </div>
                     <button class="btn btn-primary ml-12">+</button>
                   </div>
-                  <div className="flex">
+                  <div className="flex flex-wrap	">
                     <button class="btn btn-active btn-ghost w-12 mr-4"></button>
                     <div>
                       <p>Alex Choye</p>
@@ -590,7 +608,7 @@ const Sidebar = () => {
                     </div>
                     <div className="ml-6 mt-2">✉️</div>
                   </div>
-                  <div className="flex">
+                  <div className="flex flex-wrap	">
                     <button class="btn btn-active btn-ghost w-12 mr-4"></button>
                     <div>
                       <p>Bella Browne</p>
@@ -600,7 +618,7 @@ const Sidebar = () => {
                     </div>
                     <div className="ml-6 mt-2">✉️</div>
                   </div>
-                  <div className="flex">
+                  <div className="flex flex-wrap	">
                     <button class="btn btn-active btn-ghost w-12 mr-4"></button>
                     <div>
                       <p>Evans Jhone</p>
@@ -610,7 +628,7 @@ const Sidebar = () => {
                     </div>
                     <div className="ml-6 mt-2">✉️</div>
                   </div>
-                  <div className="flex">
+                  <div className="flex flex-wrap	">
                     <button class="btn btn-active btn-ghost w-12 mr-4"></button>
                     <div>
                       <p>Alex Choye</p>
@@ -626,7 +644,7 @@ const Sidebar = () => {
             </div>
 
             {/* Earning start */}
-            <div className="flex">
+            <div className="flex flex-wrap	">
               <div class="card  upper colum-card w-72 ml-4  mb-40 bg-base-100 ">
                 <div class="card-body">
                   <div className="flex">
@@ -685,7 +703,7 @@ const Sidebar = () => {
                     </p>
                   </div>
                   <p className="font-bold ">Others tag</p>
-                  <div className="flex">
+                  <div className="flex 	">
                     <div>
                       <button class="btn btn-active btn-sm btn-ghost h-6 w-24 mb-2 ">
                         <span className="text-primary">#TeamWork</span>
@@ -767,19 +785,7 @@ const Sidebar = () => {
             </div>
           </div>
         </div>
-        <div class="drawer-side">
-          <label for="my-drawer-4" class="drawer-overlay"></label>
-          <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-            {/* <!-- Sidebar content here --> */}
-            <h1 className="font-bold ">Work</h1>
-            <li>
-              <a>Sidebar Item 1</a>
-            </li>
-            <li>
-              <a>Sidebar Item 2</a>
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </div>
   );
